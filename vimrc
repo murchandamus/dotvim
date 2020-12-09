@@ -1,4 +1,11 @@
+"Must be first
+set nocompatible
+
+"General settings
 syntax on
+set showcmd
+set hlsearch
+set incsearch
 set number
 set cursorline
 set autoindent smartindent
