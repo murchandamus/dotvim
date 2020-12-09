@@ -1,14 +1,23 @@
 " Must be first
-set nocompatible
+if &compatible
+  " Vim defaults to `compatible` when selecting a vimrc with the command-line
+  " `-u` argument. Override this.
+  set nocompatible
+endif
 filetype off
 
 " General settings
 syntax on
 set showcmd
+set number
+set ruler
+
 set hlsearch
 set incsearch
-set number
-set cursorline
+set showmatch
+set ignorecase                " ignore case when searching
+set smartcase                 " no ignorecase when capital letter present
+
 set autoindent smartindent
 set expandtab
 set tabstop=4
