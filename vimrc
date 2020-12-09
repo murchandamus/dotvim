@@ -53,3 +53,7 @@ Plugin 'junegunn/rainbow_parentheses.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+" TODO:
+" Consider FZF
+" Update Vim to 8.1 and get YouCompleteMe
