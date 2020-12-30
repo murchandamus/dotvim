@@ -25,6 +25,9 @@ set softtabstop=4
 set shiftwidth=4
 set rnu
 
+" NERDTree
+nmap <F5> :NERDTreeToggle<CR>
+
 " Syntastic settings for beginners
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
