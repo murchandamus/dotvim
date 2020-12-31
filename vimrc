@@ -24,9 +24,11 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set rnu
+set lbr
 
 " NERDTree
 nmap <F5> :NERDTreeToggle<CR>
+nmap <F6> :FZF<CR>
 
 " Syntastic settings for beginners
 set statusline+=%#warningmsg#
@@ -59,9 +61,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'junegunn/rainbow_parentheses.vim'
 Plugin 'valloric/youcompleteme'
+Plugin 'junegunn/fzf'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-" TODO:
-" Consider FZF
