@@ -29,6 +29,9 @@ set lbr
 nmap <F5> :NERDTreeToggle<CR>
 nmap <F6> :FZF<CR>
 
+" YCM
+let g:ycm_collect_identifiers_from_tags_files = 1
+
 " Syntastic settings for beginners
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -41,6 +44,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_python_python_exec = 'python3'
 let g:syntastic_python_checkers = ['python']
 let g:syntastic_python_pylint_post_args="--max-line-length=120"
+let g:syntastic_cpp_checkers = ['clang_check', 'gcc']
 
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
