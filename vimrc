@@ -26,8 +26,8 @@ set shiftwidth=4
 set lbr
 
 " NERDTree
-nmap <F5> :NERDTreeToggle<CR>
-nmap <F6> :FZF<CR>
+nmap <F5> :FZF<CR>
+nmap <F6> :NERDTreeToggle<CR>
 
 " YCM
 let g:ycm_collect_identifiers_from_tags_files = 1
