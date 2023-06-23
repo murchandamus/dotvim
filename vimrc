@@ -28,6 +28,7 @@ set lbr
 " NERDTree
 nmap <F5> :FZF<CR>
 nmap <F6> :NERDTreeToggle<CR>
+nmap <F7> :RainbowParentheses!!<CR>
 
 " YCM
 let g:ycm_collect_identifiers_from_tags_files = 1
