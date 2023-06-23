@@ -29,6 +29,7 @@ set lbr
 nmap <F5> :FZF<CR>
 nmap <F6> :NERDTreeToggle<CR>
 nmap <F7> :RainbowParentheses!!<CR>
+nmap <F8> :Ag<CR>
 
 " YCM
 let g:ycm_collect_identifiers_from_tags_files = 1
@@ -66,7 +67,9 @@ Plugin 'scrooloose/syntastic'
 Plugin 'junegunn/rainbow_parentheses.vim'
 Plugin 'valloric/youcompleteme'
 Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'mhinz/vim-grepper'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
