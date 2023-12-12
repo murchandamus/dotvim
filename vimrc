@@ -12,6 +12,7 @@ set showcmd
 set number
 set ruler
 
+set background=dark
 set hlsearch
 set incsearch
 set showmatch
@@ -34,20 +35,6 @@ nmap <F8> :Ag<CR>
 " YCM
 let g:ycm_collect_identifiers_from_tags_files = 1
 
-" Syntastic settings for beginners
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_python_exec = 'python3'
-let g:syntastic_python_checkers = ['python']
-let g:syntastic_python_pylint_post_args="--max-line-length=120"
-let g:syntastic_cpp_checkers = ['clang_check', 'gcc']
-
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
 " Highlight unwanted whitespace
@@ -63,13 +50,13 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
 Plugin 'junegunn/rainbow_parentheses.vim'
 Plugin 'valloric/youcompleteme'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mhinz/vim-grepper'
+Plugin 'vim-airline/vim-airline'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
